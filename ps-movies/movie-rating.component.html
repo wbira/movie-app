@@ -1,3 +1,3 @@
 <span ng-repeat="entry in model.entires track by $index">
-    <span class="glyphicon {{ entry }}"></span>
+    <span class="glyphicon {{ entry }}" ng-click="model.setRaiting({ value: $index + 1 })"></span>
 </span>
